@@ -5,21 +5,21 @@
 class Zencommit < Formula
   desc "Zen Commit - A beautiful conventional commits tool"
   homepage "https://github.com/saivenkatram-git/zencommit"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.1.1/zencommit_0.1.1_darwin_amd64.tar.gz"
-      sha256 "1c0a626de9c0349e6b57a3acaa35a0ee71c5794681c0ce67e01bbcd249a3d047"
+      url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.2.0/zencommit_0.2.0_darwin_amd64.tar.gz"
+      sha256 "9c95bd3b54f680f7debaf32e7de8753539b4ec428354326ad640b20fa6dc18fc"
 
       def install
         bin.install "zencommit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.1.1/zencommit_0.1.1_darwin_arm64.tar.gz"
-      sha256 "5753f4bb3c788423b83a5cc403fcac9e32992ae436c2b4681e5cc8635a2dc806"
+      url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.2.0/zencommit_0.2.0_darwin_arm64.tar.gz"
+      sha256 "379273a2a2f824209c49c2ad5edfad87b2257a707064e159d83f4d191114d396"
 
       def install
         bin.install "zencommit"
@@ -29,15 +29,15 @@ class Zencommit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.1.1/zencommit_0.1.1_linux_amd64.tar.gz"
-      sha256 "2a4e83447d66687bbbb0fbaaf4af28a64da586a434b3a42415baa573575d18f7"
+      url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.2.0/zencommit_0.2.0_linux_amd64.tar.gz"
+      sha256 "62f6c9955971e8ff7278728e7106febd04ad3095d14f36fa0f2f5945cf983395"
       def install
         bin.install "zencommit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.1.1/zencommit_0.1.1_linux_arm64.tar.gz"
-      sha256 "ba5732a546a77a1070934325056a03eb3650213cb82dd82f91c6718c7d0becc2"
+      url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.2.0/zencommit_0.2.0_linux_arm64.tar.gz"
+      sha256 "93f9efa7833fa04a9bda683a41d597261230b68d5735d33e196264bb8b2ce91f"
       def install
         bin.install "zencommit"
       end
