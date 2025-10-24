@@ -11,7 +11,7 @@ class Zencommit < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.1.0/zencommit_0.1.0_darwin_amd64.tar.gz"
-      sha256 "85291e48343ed793b95a705c35bca33b64a7c806bfd262235e283d6e79b92d2c"
+      sha256 "a54428e125f7b40c96f5c1a51157d355fe42d0266617c8f7aa4e91c5d7c1f320"
 
       def install
         bin.install "zencommit"
@@ -19,7 +19,7 @@ class Zencommit < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.1.0/zencommit_0.1.0_darwin_arm64.tar.gz"
-      sha256 "704f491a1749cfae33369d84a12acaeeab4a498945a6766878a29d0e6bb8d9d6"
+      sha256 "63d78f4bbc5fcfcd0bafc4dcf39cea71f8de8b4e329669d7182dac24b125b031"
 
       def install
         bin.install "zencommit"
@@ -30,14 +30,14 @@ class Zencommit < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.1.0/zencommit_0.1.0_linux_amd64.tar.gz"
-      sha256 "761d14ec023ea7460021874aff333de0c106c8e89f2504e144b2f68caaa5530b"
+      sha256 "9e67658b26964280e22d65212b019475db57f8f13019519a43124fc8d6097302"
       def install
         bin.install "zencommit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/saivenkatram-git/zencommit/releases/download/v0.1.0/zencommit_0.1.0_linux_arm64.tar.gz"
-      sha256 "9d85c055c4c75887d8c278a26fb51bcde63f3487562dc99a1a97531d34b6527f"
+      sha256 "f84f3b5d16d80186ee11eb708601bcc8b2ef9fe4fb87723e7739aa8307fc8cb7"
       def install
         bin.install "zencommit"
       end
